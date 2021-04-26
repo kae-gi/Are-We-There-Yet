@@ -19,13 +19,12 @@ public class newScript : MonoBehaviour
 	void Start()
 	{
 		m_rigidbody = GetComponent<Rigidbody>();
-		//m_rigidbody.centerOfMass = centerOfMass.localPosition;
 	}
 
 	void OnCollisionEnter(Collision c)
 	{
 		string n = c.gameObject.name;
-        if (n == "RespawnPlane" || n == "CylinderR" || n == "CylinderL")
+        if ((n == "RespawnPlane") || (n.Substring(0, 3) == "Cyl"))
 		{
 			respawn();
         }
@@ -36,6 +35,7 @@ public class newScript : MonoBehaviour
 		// respawn to the beginning
 		transform.position = new Vector3(0, 0.3f, 0);
 		transform.rotation = Quaternion.Euler(0, 0, 0);
+		m_rigidbody.velocity = Vector3.zero;
 	}
 
 

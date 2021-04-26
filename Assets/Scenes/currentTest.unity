@@ -605,16 +605,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
       propertyPath: maxTorque
       value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
+      propertyPath: constSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
       propertyPath: jumpHeight
-      value: 10
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
+      propertyPath: forwardInput
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
+      propertyPath: horizontalInput
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3003992593440735491, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
       propertyPath: horizontalSpeed
-      value: 0.15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3201355356146122441, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
       propertyPath: m_LocalPosition.y
