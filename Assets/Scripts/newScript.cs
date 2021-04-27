@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class newScript : MonoBehaviour
 {
@@ -32,9 +33,10 @@ public class newScript : MonoBehaviour
 	void respawn()
     {
 		// respawn to the beginning
-		transform.position = new Vector3(0, 0.3f, 0);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		/*transform.position = new Vector3(0, 0.3f, 0);
 		transform.rotation = Quaternion.Euler(0, 0, 0);
-		m_rigidbody.velocity = Vector3.zero;
+		m_rigidbody.velocity = Vector3.zero;*/
 	}
 
 
@@ -56,6 +58,7 @@ public class newScript : MonoBehaviour
 		{
 			m_rigidbody.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
 		}
-		transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed * horizontalInput + Vector3.forward * constSpeed * Time.deltaTime);
+		/*transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed * horizontalInput + Vector3.forward * constSpeed * Time.deltaTime);*/
+		transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed * horizontalInput);
 	}
 }
