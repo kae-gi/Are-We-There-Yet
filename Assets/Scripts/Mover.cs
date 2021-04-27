@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    public float xSpeed = 0;
+    public float ySpeed = 0;
+    public float zSpeed = 0;
     void Update()
     {
-        transform.Translate(0, 0, -20 * Time.deltaTime);
+        transform.Translate(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime, zSpeed * Time.deltaTime);
     }
 }
