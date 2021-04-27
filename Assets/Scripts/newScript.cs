@@ -9,12 +9,11 @@ public class newScript : MonoBehaviour
 	public float maxTorque = 50.0f;
 	private Rigidbody m_rigidbody;
 	public Transform centerOfMass;
-	public int jumpHeight = 1;
-	public float horizontalSpeed = 0.15f;
+	public int jumpHeight = 5;
+	public float horizontalSpeed = 7f;
 	public float horizontalInput;
 	public float forwardInput;
-	public float speed;
-	public float constSpeed;
+	public float constSpeed = 20;
 
 	void Start()
 	{
@@ -47,7 +46,6 @@ public class newScript : MonoBehaviour
 
 		for (int i = 0; i < 4; i++)
 		{
-			wheelColliders[i].motorTorque = forwardInput * maxTorque;
 			if (!wheelColliders[i].isGrounded)
 			{
 				isGrounded = false;
@@ -58,7 +56,6 @@ public class newScript : MonoBehaviour
 		{
 			m_rigidbody.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
 		}
-		transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-		transform.Rotate(Vector3.up, Time.deltaTime * horizontalSpeed * horizontalInput);
+		transform.Translate(Vector3.right * Time.deltaTime * horizontalSpeed * horizontalInput + Vector3.forward * constSpeed * Time.deltaTime);
 	}
 }
