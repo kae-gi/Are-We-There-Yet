@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PotentialMove : MonoBehaviour
 {
     private float horizontalInput;
     private float steerAngle;
     private float speed;
+    private int fuelCount;
     private bool isGrounded;
     private bool isAccelerating = false;
     private Rigidbody rb;
@@ -17,35 +19,44 @@ public class PotentialMove : MonoBehaviour
     public float baseSpeed = 25;
     public float maxSpeed = 40;
     public float jumpVelocity = 5;
-    public float timeRemaining = 1;
+    public float InitialTimeRemaining = 1;
+    public float timeRemaining;
+    public TextMeshProUGUI fuelCountText;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        timeRemaining = InitialTimeRemaining;
+        fuelCount = 0;
+        SetCountText();
     }
 
     void FixedUpdate()
     {
-        // Input
+        // input
         horizontalInput = Input.GetAxis("Horizontal"); // for moving side to side 
         // steering
         steerAngle = maxSteerAngle * horizontalInput;
         transform.Translate(Vector3.right * Time.deltaTime * steerAngle);
         // acceleration controls
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        // => input if accelerating
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             isAccelerating = true;
         }
-        if (isAccelerating && timeRemaining > 0)
+        // => controls speed & duration
+        if (!isAccelerating || timeRemaining < 0)
+        {
+            isAccelerating = false;
+            speed = baseSpeed;
+            timeRemaining = InitialTimeRemaining;
+        }
+        else 
         {
             isAccelerating = true;
             speed = maxSpeed;
             timeRemaining -= Time.deltaTime;
-        }
-        else
-        {
-            isAccelerating = false;
-            speed = baseSpeed;
         }
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         // jumping
@@ -68,6 +79,24 @@ public class PotentialMove : MonoBehaviour
         }
 
     }
+
+    // fuel counter
+    void SetCountText()
+    {
+        fuelCountText.text = "Fuel Count: " + fuelCount.ToString();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+            fuelCount++;
+
+            SetCountText();
+        }
+    }
+
 
 
 }
