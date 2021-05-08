@@ -20,8 +20,10 @@ public class PotentialMove : MonoBehaviour
     public float maxSpeed = 40;
     public float jumpVelocity = 5;
     public float InitialTimeRemaining = 1;
+    public float curHealth = 1.0f;
     public float timeRemaining;
     public TextMeshProUGUI fuelCountText;
+    public HealthBar healthBar;
 
 
     void Start()
@@ -30,6 +32,7 @@ public class PotentialMove : MonoBehaviour
         timeRemaining = InitialTimeRemaining;
         fuelCount = 0;
         SetCountText();
+        healthBar.setHealth(1.0f);
     }
 
     void FixedUpdate()
@@ -78,6 +81,8 @@ public class PotentialMove : MonoBehaviour
             rb.AddForce(Vector3.down, ForceMode.VelocityChange);
         }
 
+        // keep the vehicle facing forward at all times
+        transform.rotation = Quaternion.identity;
     }
 
     // fuel counter
@@ -97,6 +102,11 @@ public class PotentialMove : MonoBehaviour
         }
     }
 
-
+    // health bar methods
+    public void reduceHealth(float amount)
+    {
+        curHealth += amount;
+        healthBar.setHealth(curHealth);
+    }
 
 }

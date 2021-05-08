@@ -8,11 +8,22 @@ public class handleCollision : MonoBehaviour
 {
     public Transform player;
 
+    // collisionHitAmount is how much the health should be reduced by per collision with
+    // a specific game object. The initial health starts at 1.0f and the level will restart
+    // when the remaining health goes <= 0.0f. This can be adjusted for each unique game object
+    public float collisionHitAmount = -0.3f; 
+
     void OnCollisionEnter(Collision other)
 	{
         if (other.transform == player)
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            player.GetComponent<PotentialMove>().reduceHealth(collisionHitAmount);
+
+            // restart the level if the current health goes down to 0.0f. Starts with 1.0f at beginning
+            if (player.GetComponent<PotentialMove>().curHealth <= 0.0f)
+            {
+			    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }
