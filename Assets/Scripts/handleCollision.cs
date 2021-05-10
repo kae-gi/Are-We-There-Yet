@@ -17,7 +17,7 @@ public class handleCollision : MonoBehaviour
 	{
         if (other.transform == player)
 		{
-            player.GetComponent<PotentialMove>().reduceHealth(collisionHitAmount);
+            player.GetComponent<PotentialMove>().changeHealthAmount(collisionHitAmount);
 
             // restart the level if the current health goes down to 0.0f. Starts with 1.0f at beginning
             if (player.GetComponent<PotentialMove>().curHealth <= 0.0f)

@@ -20,10 +20,16 @@ public class PotentialMove : MonoBehaviour
     public float maxSpeed = 40;
     public float jumpVelocity = 5;
     public float InitialTimeRemaining = 1;
-    public float curHealth = 1.0f;
     public float timeRemaining;
+
     public TextMeshProUGUI fuelCountText;
+    public GasBar gasBar;
+    public float reduceGasPerUpdateFactor = -0.001f;
+    private float curGasAmount = 0.5f;
+
     public HealthBar healthBar;
+    public float curHealth = 1.0f;
+
 
 
     void Start()
@@ -33,6 +39,7 @@ public class PotentialMove : MonoBehaviour
         fuelCount = 0;
         SetCountText();
         healthBar.setHealth(1.0f);
+        gasBar.setGas(0.5f);
     }
 
     void FixedUpdate()
@@ -55,13 +62,14 @@ public class PotentialMove : MonoBehaviour
             speed = baseSpeed;
             timeRemaining = InitialTimeRemaining;
         }
-        else 
+        else
         {
             isAccelerating = true;
             speed = maxSpeed;
             timeRemaining -= Time.deltaTime;
         }
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
         // jumping
         isGrounded = true;
         for (int i = 0; i < 4; i++)
@@ -81,6 +89,9 @@ public class PotentialMove : MonoBehaviour
             rb.AddForce(Vector3.down, ForceMode.VelocityChange);
         }
 
+        // decrease the gas meter level
+        changeGasAmount(reduceGasPerUpdateFactor);
+
         // keep the vehicle facing forward at all times
         transform.rotation = Quaternion.identity;
     }
@@ -97,16 +108,36 @@ public class PotentialMove : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             fuelCount++;
+            curGasAmount += 0.1f;
+            gasBar.setGas(curGasAmount);
 
             SetCountText();
         }
     }
 
-    // health bar methods
-    public void reduceHealth(float amount)
+    // health bar 
+    public void changeHealthAmount(float amount)
     {
         curHealth += amount;
         healthBar.setHealth(curHealth);
+    }
+
+    public void changeGasAmount(float amount)
+    {
+        curGasAmount += amount;
+
+        if (curGasAmount > 1.0f)
+        {
+            curGasAmount = 1.0f;
+        }
+
+        gasBar.setGas(curGasAmount);
+
+        // reload the scene if the player runs out of gas
+        if (curGasAmount <= 0.0f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 }
