@@ -46,6 +46,8 @@ public class PotentialMove : MonoBehaviour
         gasBar.setGas(0.5f);
         setCoinCountText();
 
+        // set the car color
+        transform.GetChild(0).GetComponent<MeshRenderer>().material.color = GlobalData.carColor;
     }
 
     void Update()
@@ -132,7 +134,7 @@ public class PotentialMove : MonoBehaviour
     // coin counter
     void setCoinCountText()
     {
-        coinCountText.text = "    " + Data.coinCount.ToString();
+        coinCountText.text = "    " + GlobalData.coinCount.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -150,7 +152,7 @@ public class PotentialMove : MonoBehaviour
         else if (other.gameObject.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
-            Data.coinCount++;
+            GlobalData.coinCount++;
             setCoinCountText();
         }
     }
