@@ -33,6 +33,8 @@ public class PotentialMove : MonoBehaviour
 
     public GameObject laser;
 
+    public TextMeshProUGUI coinCountText;
+    // NOTE: public static int coinCount is located in Scripts > Data.cs
 
     void Start()
     {
@@ -42,6 +44,8 @@ public class PotentialMove : MonoBehaviour
         SetCountText();
         healthBar.setHealth(1.0f);
         gasBar.setGas(0.5f);
+        setCoinCountText();
+
     }
 
     void Update()
@@ -125,6 +129,12 @@ public class PotentialMove : MonoBehaviour
         fuelCountText.text = "Fuel Count: " + fuelCount.ToString();
     }
 
+    // coin counter
+    void setCoinCountText()
+    {
+        coinCountText.text = "    " + Data.coinCount.ToString();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PickUp"))
@@ -135,6 +145,13 @@ public class PotentialMove : MonoBehaviour
             gasBar.setGas(curGasAmount);
 
             SetCountText();
+        }
+
+        else if (other.gameObject.CompareTag("Coin"))
+        {
+            other.gameObject.SetActive(false);
+            Data.coinCount++;
+            setCoinCountText();
         }
     }
 
