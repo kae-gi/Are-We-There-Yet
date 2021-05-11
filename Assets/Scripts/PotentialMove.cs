@@ -13,6 +13,7 @@ public class PotentialMove : MonoBehaviour
     private bool isGrounded;
     private bool isAccelerating = false;
     private Rigidbody rb;
+    private Vector3 inputVector;
 
     public WheelCollider[] wheelColliders = new WheelCollider[4];
     public float maxSteerAngle = 30;
@@ -30,6 +31,7 @@ public class PotentialMove : MonoBehaviour
     public HealthBar healthBar;
     public float curHealth = 1.0f;
 
+    public GameObject laser;
 
 
     void Start()
@@ -42,13 +44,29 @@ public class PotentialMove : MonoBehaviour
         gasBar.setGas(0.5f);
     }
 
+    void Update()
+    {
+        // laser input
+        if (Input.GetKeyDown(KeyCode.RightShift))
+        {
+            Vector3 laser1Pos = new Vector3(transform.position.x + 0.75f, transform.position.y, transform.position.z);
+            Vector3 laser2Pos = new Vector3(transform.position.x - 0.75f, transform.position.y, transform.position.z);
+            // produce laser at player location
+            Rigidbody _laser1 = Instantiate(laser.GetComponent<Rigidbody>(), laser1Pos, Quaternion.identity);
+            Rigidbody _laser2 = Instantiate(laser.GetComponent<Rigidbody>(), laser2Pos, Quaternion.identity);
+
+            // destroy object laser after 1 sec
+            Destroy(_laser1);
+            Destroy(_laser2);
+        }
+    }
+
     void FixedUpdate()
     {
         // input
         horizontalInput = Input.GetAxis("Horizontal"); // for moving side to side 
         // steering
         steerAngle = maxSteerAngle * horizontalInput;
-        transform.Translate(Vector3.right * Time.deltaTime * steerAngle);
         // acceleration controls
         // => input if accelerating
         if (Input.GetKey(KeyCode.LeftShift))
@@ -61,14 +79,20 @@ public class PotentialMove : MonoBehaviour
             isAccelerating = false;
             speed = baseSpeed;
             timeRemaining = InitialTimeRemaining;
+            // ==> decrease the gas meter level (normal rate)
+            changeGasAmount(reduceGasPerUpdateFactor);
         }
         else
         {
             isAccelerating = true;
             speed = maxSpeed;
             timeRemaining -= Time.deltaTime;
+            // ==> decrease the gas meter level (accelerated)
+            changeGasAmount(reduceGasPerUpdateFactor * 3);
         }
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        // new movement added to use rigidBody instead of tranform
+        inputVector = new Vector3(steerAngle, rb.velocity.y, speed);
+        rb.velocity = inputVector;
 
         // jumping
         isGrounded = true;
@@ -89,12 +113,10 @@ public class PotentialMove : MonoBehaviour
             rb.AddForce(Vector3.down, ForceMode.VelocityChange);
         }
 
-        // decrease the gas meter level
-        changeGasAmount(reduceGasPerUpdateFactor);
-
         // keep the vehicle facing forward at all times
         transform.rotation = Quaternion.identity;
     }
+
 
     // fuel counter
     void SetCountText()
