@@ -49,8 +49,9 @@ public class PotentialMove : MonoBehaviour
         // laser input
         if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            Vector3 laser1Pos = new Vector3(transform.position.x + 0.75f, transform.position.y, transform.position.z);
-            Vector3 laser2Pos = new Vector3(transform.position.x - 0.75f, transform.position.y, transform.position.z);
+            // spawn location of laser beam
+            Vector3 laser1Pos = new Vector3(transform.position.x + 0.75f, transform.position.y, transform.position.z+7);
+            Vector3 laser2Pos = new Vector3(transform.position.x - 0.75f, transform.position.y, transform.position.z+7);
             // produce laser at player location
             Rigidbody _laser1 = Instantiate(laser.GetComponent<Rigidbody>(), laser1Pos, Quaternion.identity);
             Rigidbody _laser2 = Instantiate(laser.GetComponent<Rigidbody>(), laser2Pos, Quaternion.identity);
