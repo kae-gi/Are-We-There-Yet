@@ -22,7 +22,7 @@ public class handleCollision : MonoBehaviour
             // restart the level if the current health goes down to 0.0f. Starts with 1.0f at beginning
             if (player.GetComponent<PotentialMove>().curHealth <= 0.0f)
             {
-			    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			    SceneManager.LoadScene(0);
             }
         }
     }
