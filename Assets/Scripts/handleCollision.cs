@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class handleCollision : MonoBehaviour
 {
     public Transform player;
+    public AudioSource crashSound;
 
     // collisionHitAmount is how much the health should be reduced by per collision with
     // a specific game object. The initial health starts at 1.0f and the level will restart
@@ -17,6 +18,10 @@ public class handleCollision : MonoBehaviour
 	{
         if (other.transform == player)
 		{
+            if (crashSound)
+            {
+                crashSound.Play();
+            }
             player.GetComponent<PotentialMove>().changeHealthAmount(collisionHitAmount);
 
             // restart the level if the current health goes down to 0.0f. Starts with 1.0f at beginning

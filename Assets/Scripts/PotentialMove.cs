@@ -36,6 +36,10 @@ public class PotentialMove : MonoBehaviour
     public TextMeshProUGUI coinCountText;
     // NOTE: public static int coinCount is located in Scripts > Data.cs
 
+    public AudioSource coinPickupSound;
+    public AudioSource GasPickupSound;
+    public AudioSource boatHornSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -141,6 +145,7 @@ public class PotentialMove : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            GasPickupSound.Play();
             other.gameObject.SetActive(false);
             fuelCount++;
             curGasAmount += 0.1f;
@@ -151,9 +156,15 @@ public class PotentialMove : MonoBehaviour
 
         else if (other.gameObject.CompareTag("Coin"))
         {
+            coinPickupSound.Play();
             other.gameObject.SetActive(false);
             GlobalData.coinCount++;
             setCoinCountText();
+        }
+
+        else if (other.gameObject.CompareTag("HornTrigger"))
+        {
+            boatHornSound.Play();
         }
     }
 

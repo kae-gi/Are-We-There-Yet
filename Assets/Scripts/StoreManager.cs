@@ -18,6 +18,10 @@ public class StoreManager : MonoBehaviour
     public TextMeshProUGUI blackCostText;
     private static int blackCost = 75;
 
+    public AudioSource clickAudio;
+    public AudioSource newPurchaseAudio;
+    public AudioSource insufficientAudio;
+
     private Color RED   = new Color(1.0f, 0.0f, 0.0f);
     private Color GREEN = new Color(0.0f, 1.0f, 0.0f);
     private Color BLACK = new Color(0.0f, 0.0f, 0.0f);
@@ -44,6 +48,7 @@ public class StoreManager : MonoBehaviour
 
     public void bluePaint()
     {
+        clickAudio.Play();
         GlobalData.carColor = WHITE; // the base coat is already blue, so just use white
         updateStoreSceneCarColor(GlobalData.carColor);
     }
@@ -53,6 +58,7 @@ public class StoreManager : MonoBehaviour
         // return if the player doesn't have enough coins
         if (GlobalData.coinCount < redCost)
         {
+            insufficientAudio.Play();
             redCostText.color = RED;
             return;
         }
@@ -65,6 +71,11 @@ public class StoreManager : MonoBehaviour
             coinCountText.text = GlobalData.coinCount.ToString();
             redCost = 0;
             redCostText.text = "0";
+            newPurchaseAudio.Play();
+        }
+        else
+        {
+            clickAudio.Play();
         }
 
         // set the car color
@@ -77,6 +88,7 @@ public class StoreManager : MonoBehaviour
         // return if the player doesn't have enough coins
         if (GlobalData.coinCount < greenCost)
         {
+            insufficientAudio.Play();
             greenCostText.color = RED;
             return;
         }
@@ -89,6 +101,11 @@ public class StoreManager : MonoBehaviour
             coinCountText.text = GlobalData.coinCount.ToString();
             greenCost = 0;
             greenCostText.text = "0";
+            newPurchaseAudio.Play();
+        }
+        else
+        {
+            clickAudio.Play();
         }
 
         // set the car color
@@ -101,6 +118,7 @@ public class StoreManager : MonoBehaviour
         // return if the player doesn't have enough coins
         if (GlobalData.coinCount < blackCost)
         {
+            insufficientAudio.Play();
             blackCostText.color = RED;
             return;
         }
@@ -113,6 +131,11 @@ public class StoreManager : MonoBehaviour
             coinCountText.text = GlobalData.coinCount.ToString();
             blackCost = 0;
             blackCostText.text = "0";
+            newPurchaseAudio.Play();
+        }
+        else
+        {
+            clickAudio.Play();
         }
 
         // set the car color
