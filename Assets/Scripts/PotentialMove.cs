@@ -38,7 +38,9 @@ public class PotentialMove : MonoBehaviour
 
     public AudioSource coinPickupSound;
     public AudioSource GasPickupSound;
+    public AudioSource laserSound;
     public AudioSource boatHornSound;
+    public AudioSource boostSound;
 
     void Start()
     {
@@ -59,6 +61,7 @@ public class PotentialMove : MonoBehaviour
         // laser input
         if (Input.GetKeyDown(KeyCode.RightShift))
         {
+            laserSound.Play();
             // spawn location of laser beam
             Vector3 laser1Pos = new Vector3(transform.position.x + 0.75f, transform.position.y+0.65f, transform.position.z+7);
             Vector3 laser2Pos = new Vector3(transform.position.x - 0.75f, transform.position.y+0.65f, transform.position.z+7);
@@ -82,6 +85,7 @@ public class PotentialMove : MonoBehaviour
         // => input if accelerating
         if (Input.GetKey(KeyCode.LeftShift))
         {
+            boostSound.Play();
             isAccelerating = true;
         }
         // => controls speed & duration
