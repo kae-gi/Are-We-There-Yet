@@ -193,7 +193,7 @@ public class PotentialMove : MonoBehaviour
         // reload the scene if the player runs out of gas
         if (curGasAmount <= 0.0f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(0);
         }
     }
 
