@@ -12,13 +12,20 @@ public class menu : MonoBehaviour
         car.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = GlobalData.carColor;
     }
 
-    public void ButtonStart()
+    public void LoadCity()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void StoreStart()
+    public void LoadSpace()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void LoadStore()
     {
         SceneManager.LoadScene(2);
     }
+
+    
 }
