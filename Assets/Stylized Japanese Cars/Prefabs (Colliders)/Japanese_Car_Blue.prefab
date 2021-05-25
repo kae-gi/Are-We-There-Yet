@@ -567,7 +567,6 @@ GameObject:
   m_Component:
   - component: {fileID: 148152028307120494}
   - component: {fileID: 6832352370623280607}
-  - component: {fileID: 3003992593440735491}
   m_Layer: 0
   m_Name: Japanese_Car_Blue
   m_TagString: Untagged
@@ -608,30 +607,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3003992593440735491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3770936364630610813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b7d5d8874054ddaa2d96739079d2e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wheelColliders:
-  - {fileID: 2941837746228301025}
-  - {fileID: 6582962886144500279}
-  - {fileID: 8754588588691952639}
-  - {fileID: 1449078949014467529}
-  tyreMeshes:
-  - {fileID: 4743132384707902948}
-  - {fileID: 6503926518428284952}
-  - {fileID: 8783462834947923320}
-  - {fileID: 5780913367303404551}
-  maxTorque: 50
-  centerOfMass: {fileID: 3201355356146122441}
 --- !u!1 &4185638928285964413
 GameObject:
   m_ObjectHideFlags: 0

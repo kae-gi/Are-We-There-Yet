@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class menu : MonoBehaviour
+public class Menu : MonoBehaviour
 {
     public GameObject car;
 
@@ -20,6 +20,11 @@ public class menu : MonoBehaviour
     public void LoadSpace()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void LoadDesert()
+    {
+        SceneManager.LoadScene(4);
     }
 
     public void LoadStore()

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceSceneMaybe.unity
     guid: a1cf59eafd712664ab35242eb465810a
+  - enabled: 1
+    path: Assets/Scenes/DesertScene.unity
+    guid: 0f0017849ec934b1785195d59d6e2e7c
   m_configObjects: {}
