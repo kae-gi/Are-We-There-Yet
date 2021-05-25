@@ -69,9 +69,9 @@ public class PotentialMove : MonoBehaviour
             Rigidbody _laser1 = Instantiate(laser.GetComponent<Rigidbody>(), laser1Pos, Quaternion.identity);
             Rigidbody _laser2 = Instantiate(laser.GetComponent<Rigidbody>(), laser2Pos, Quaternion.identity);
 
-            // destroy object laser after 1 sec
-            //Destroy(_laser1);
-            //Destroy(_laser2);
+            // destroy object laser after some seconds (to prevent staying in level w/o hitting enemy)
+            Destroy(_laser1.gameObject, 3f);
+            Destroy(_laser2.gameObject, 3f);
         }
     }
 
