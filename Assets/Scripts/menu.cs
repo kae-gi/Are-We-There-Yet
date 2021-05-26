@@ -9,7 +9,10 @@ public class menu : MonoBehaviour
 
     private void Start()
     {
-        car.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = GlobalData.carColor;
+        if (car)
+        {
+            car.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = GlobalData.carColor;
+        }
     }
 
     public void LoadMenu()
