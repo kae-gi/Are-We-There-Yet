@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33745376202648698}
   - component: {fileID: 23655761337334792}
   - component: {fileID: 64440621521864890}
+  - component: {fileID: 6046932823403328242}
   m_Layer: 0
   m_Name: barrier-concrete
   m_TagString: Untagged
@@ -97,3 +98,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3ddb513a1492d4e38ad77a9737455f25, type: 3}
+--- !u!114 &6046932823403328242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542148437703578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  crashSound: {fileID: 0}
+  collisionHitAmount: -0.3
