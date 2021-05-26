@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &24970799
 Rigidbody:
@@ -761,6 +761,7 @@ Transform:
   - {fileID: 1996387948}
   - {fileID: 1324013449}
   - {fileID: 1605034159}
+  - {fileID: 129558898}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1940,6 +1941,133 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000014192746172, guid: 41b656ace1fc7b544aac223a2f885bb8, type: 3}
   m_PrefabInstance: {fileID: 1831616370}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &129558897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129558898}
+  - component: {fileID: 129558899}
+  m_Layer: 0
+  m_Name: Tumbleweed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129558898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129558897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 45097312}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &129558899
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129558897}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: eea9f3b3c83684ae0b94485bd8aa0c77, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &130865169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3770936364630610813, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
@@ -2990,7 +3118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &255385205
 Rigidbody:
@@ -3285,7 +3413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &292834120
 Rigidbody:
@@ -5147,7 +5275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &428729747
 Rigidbody:
@@ -5410,7 +5538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &445002916
 Rigidbody:
@@ -6247,7 +6375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &506843315
 Rigidbody:
@@ -7524,7 +7652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &643490777
 Rigidbody:
@@ -7730,7 +7858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &663141525
 Rigidbody:
@@ -8108,7 +8236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &690024586
 Rigidbody:
@@ -9392,7 +9520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &803000824
 Rigidbody:
@@ -9438,7 +9566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &812419917
 Rigidbody:
@@ -10114,7 +10242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &856047129
 Rigidbody:
@@ -10933,7 +11061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &910921264
 Rigidbody:
@@ -12728,7 +12856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1059495401
 Rigidbody:
@@ -12946,7 +13074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1076315436
 Rigidbody:
@@ -12992,7 +13120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1085079043
 Rigidbody:
@@ -16731,7 +16859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1391379206
 Rigidbody:
@@ -17128,7 +17256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1451722645
 Rigidbody:
@@ -18208,7 +18336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 1996387949}
   collisionHitAmount: -1
 --- !u!65 &1548424123
 BoxCollider:
@@ -18429,7 +18557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1567871673
 Rigidbody:
@@ -19666,7 +19794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1669134486
 Rigidbody:
@@ -20402,7 +20530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1723716198
 Rigidbody:
@@ -21000,7 +21128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1774073279
 Rigidbody:
@@ -21394,7 +21522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &1800659285
 Rigidbody:
@@ -24303,7 +24431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &2089693149
 Rigidbody:
@@ -24354,7 +24482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &2095082209
 Rigidbody:
@@ -24920,7 +25048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 129558899}
   collisionHitAmount: -0.05
 --- !u!54 &2137020460
 Rigidbody:
