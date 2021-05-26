@@ -2566,9 +2566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &152012038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2633,9 +2630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &159185390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3102,9 +3096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: 0
 --- !u!65 &188287514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3438,9 +3429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &203945150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3810,9 +3798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &257565767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3925,9 +3910,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 706003565}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: LoadCity
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4934,7 +4919,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 706003565}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: LoadSpace
         m_Mode: 1
@@ -5517,9 +5502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &380469762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5694,9 +5676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &388130740
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5908,9 +5887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &413422593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5975,9 +5951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &415212789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8505,9 +8478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &637543836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8783,9 +8753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &664322202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8911,9 +8878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &667950719
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9027,9 +8991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &690165880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9255,6 +9216,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705936501}
   m_CullTransparentMesh: 1
+--- !u!1 &706003564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706003566}
+  - component: {fileID: 706003565}
+  m_Layer: 0
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &706003565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706003564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f48387cd1808e4d9f9b592cd6ab62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 130865169}
+--- !u!4 &706003566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706003564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 512.58167, y: 61.344772, z: 1624.4047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &707542219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9582,9 +9587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &724343118
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10812,7 +10814,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 706003565}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: LoadSpace
         m_Mode: 1
@@ -11088,9 +11090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &775665573
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11124,9 +11123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &778211845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11226,9 +11222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &782652732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12574,9 +12567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &876436112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13391,9 +13381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.3
 --- !u!4 &911174113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012118680452, guid: c16b273bb66f2484da70cc699a851863, type: 3}
@@ -14460,9 +14447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.3
 --- !u!65 &1013084208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14627,9 +14611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1032204382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14760,9 +14741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &1049232669
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15320,9 +15298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1088968785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15448,9 +15423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1107780947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15964,9 +15936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &1143592679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011743371500, guid: f3717ec476d85431cb3b0f6be1a9ce13, type: 3}
@@ -17461,9 +17430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1250902083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17683,9 +17649,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 706003565}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: LoadCity
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18057,9 +18023,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &1302137361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18455,9 +18418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &1317364400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18816,9 +18776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &1331650330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19275,9 +19232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1340053841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19566,9 +19520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1386844894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19696,7 +19647,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408866159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c92f7e9e03d76a84dbbaf9c4b0dafa44, type: 3}
   m_Name: 
@@ -20168,9 +20119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1457975827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20293,9 +20241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &1478226154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012118680452, guid: c16b273bb66f2484da70cc699a851863, type: 3}
@@ -21267,9 +21212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1584245652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21661,9 +21603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1606713953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22685,9 +22624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &1696324019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22863,7 +22799,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 706003565}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: LoadStore
         m_Mode: 1
@@ -23281,9 +23217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1732908219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23764,9 +23697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &1765102789
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24493,9 +24423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1810275653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25164,9 +25091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: 0
 --- !u!65 &1875681538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25418,9 +25342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1885406346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26109,7 +26030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 148152028307120494, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 1010.05
       objectReference: {fileID: 0}
     - target: {fileID: 148152028307120494, guid: f45ab1def24dca745a37bc53e930fb06, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26388,9 +26309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &1937931783
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26486,9 +26404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!65 &1948152599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26812,9 +26727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &1968421562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28138,9 +28050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!54 &2066285665
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28636,9 +28545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!114 &2099487301
 MonoBehaviour:
   m_ObjectHideFlags: 0
