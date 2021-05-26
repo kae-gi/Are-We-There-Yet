@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class HandleCollision : MonoBehaviour
+public class handleCollision : MonoBehaviour
 {
     public Transform player;
     public AudioSource crashSound;
