@@ -17,6 +17,11 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void LoadRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void LoadCity()
     {
         SceneManager.LoadScene(1);
