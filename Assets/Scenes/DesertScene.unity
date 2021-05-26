@@ -620,9 +620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &24970799
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -661,9 +658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -1
 --- !u!4 &35122934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011743371500, guid: f3717ec476d85431cb3b0f6be1a9ce13, type: 3}
@@ -1153,9 +1147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &74477681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014192746172, guid: 41b656ace1fc7b544aac223a2f885bb8, type: 3}
@@ -2780,9 +2771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &241185878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2989,9 +2977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &255385205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3284,9 +3269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &292834120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3790,9 +3772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &335500574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3881,9 +3860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &341740259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011743371500, guid: f3717ec476d85431cb3b0f6be1a9ce13, type: 3}
@@ -4275,9 +4251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &369712768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014192746172, guid: 41b656ace1fc7b544aac223a2f885bb8, type: 3}
@@ -5146,9 +5119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &428729747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5409,9 +5379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &445002916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5650,9 +5617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &454262511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920260729727542213, guid: 382fc38dd6685964abf0a2a81a758ffa, type: 3}
@@ -6012,9 +5976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &477200808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011743371500, guid: f3717ec476d85431cb3b0f6be1a9ce13, type: 3}
@@ -6246,9 +6207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &506843315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6364,9 +6322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &537794799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7010,9 +6965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &578842494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920260729727542213, guid: 382fc38dd6685964abf0a2a81a758ffa, type: 3}
@@ -7056,10 +7008,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585870993}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c1574d7a141f946b3bffbb4782aa5708, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dd8d0e60e34054341b36c3a25a711b22, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -7523,9 +7475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &643490777
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7638,9 +7587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &650465143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7729,9 +7675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &663141525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7780,9 +7723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &672030092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8107,9 +8047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &690024586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9066,9 +9003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &779904767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9391,9 +9325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &803000824
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9437,9 +9368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &812419917
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9861,9 +9789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &843669314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920260729727542213, guid: 382fc38dd6685964abf0a2a81a758ffa, type: 3}
@@ -9891,9 +9816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &847239034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10050,9 +9972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &852182462
 GameObject:
   m_ObjectHideFlags: 0
@@ -10113,9 +10032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &856047129
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10357,9 +10273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &866791820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463544, guid: 9bb03150dc9d39a4e9760c61e7d01bcc, type: 3}
@@ -10932,9 +10845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &910921264
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11004,9 +10914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1 &919562748
 GameObject:
   m_ObjectHideFlags: 0
@@ -11525,9 +11432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &966073552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013990084046, guid: 991a7e975956ecf43b15046bba67c830, type: 3}
@@ -11677,9 +11581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1 &990134665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014109055006, guid: 5c9de7283eb7304419a30532403d04e6, type: 3}
@@ -11702,9 +11603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &990687636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11968,9 +11866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!65 &1013084208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12726,9 +12621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1059495401
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12944,9 +12836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1076315436
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12990,9 +12879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1085079043
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14079,9 +13965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &1192463723
 GameObject:
   m_ObjectHideFlags: 0
@@ -15631,9 +15514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &1300139504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15713,9 +15593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &1309103574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16066,9 +15943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1 &1334768540
 GameObject:
   m_ObjectHideFlags: 0
@@ -16699,9 +16573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &1382598809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011743371500, guid: f3717ec476d85431cb3b0f6be1a9ce13, type: 3}
@@ -16729,9 +16600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1391379206
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17101,9 +16969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &1451722642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013185116980, guid: 5e4598f3060674e4b9abf4ee47e00197, type: 3}
@@ -17126,9 +16991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1451722645
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17172,9 +17034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &1463313441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1843080922423118, guid: cb7410ed189ae444f9afc02cce9731d0, type: 3}
@@ -17197,9 +17056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &1464420916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014109055006, guid: 5c9de7283eb7304419a30532403d04e6, type: 3}
@@ -17222,9 +17078,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &1466681712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920260729727542213, guid: 382fc38dd6685964abf0a2a81a758ffa, type: 3}
@@ -17320,9 +17173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &1467352730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463544, guid: 9bb03150dc9d39a4e9760c61e7d01bcc, type: 3}
@@ -18206,9 +18056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!65 &1548424123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18427,9 +18274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1567871673
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19664,9 +19508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1669134486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19705,9 +19546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &1683602392
 GameObject:
   m_ObjectHideFlags: 0
@@ -19815,9 +19653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &1692690277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20401,9 +20236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1723716198
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20510,9 +20342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &1724053663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463544, guid: 9bb03150dc9d39a4e9760c61e7d01bcc, type: 3}
@@ -20610,9 +20439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &1750383155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20773,9 +20599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &1763691987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20999,9 +20822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1774073279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21045,9 +20865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!4 &1783239037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920260729727542213, guid: 382fc38dd6685964abf0a2a81a758ffa, type: 3}
@@ -21393,9 +21210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &1800659285
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22029,9 +21843,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!65 &1840638094
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23011,9 +22822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &1976991800
 GameObject:
   m_ObjectHideFlags: 0
@@ -23764,9 +23572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1001 &2049423988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23931,9 +23736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &2056059598
 GameObject:
   m_ObjectHideFlags: 0
@@ -24099,9 +23901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &2062000653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463544, guid: 9bb03150dc9d39a4e9760c61e7d01bcc, type: 3}
@@ -24194,9 +23993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!4 &2079647988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011743371500, guid: f3717ec476d85431cb3b0f6be1a9ce13, type: 3}
@@ -24302,9 +24098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &2089693149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24353,9 +24146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &2095082209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24680,9 +24470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1 &2113668085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014109055006, guid: 5c9de7283eb7304419a30532403d04e6, type: 3}
@@ -24705,9 +24492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 1605034160}
-  collisionHitAmount: -0.3
 --- !u!1 &2114589078
 GameObject:
   m_ObjectHideFlags: 0
@@ -24824,9 +24608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -1
 --- !u!1001 &2121937004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24919,9 +24700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c703f605f35f2a409a1b8c0d12297c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 130865173}
-  crashSound: {fileID: 0}
-  collisionHitAmount: -0.05
 --- !u!54 &2137020460
 Rigidbody:
   m_ObjectHideFlags: 0
