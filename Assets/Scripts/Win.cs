@@ -22,7 +22,6 @@ public class Win : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(win);
         if (win)
         {
             winCanvas.enabled = true;
