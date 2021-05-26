@@ -5,20 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    // NOT working currently
+    public GameObject player;
+    public Canvas winCanvas;
+    public Canvas gameOverCanvas;
+    public Canvas hudCanvas;
 
-    public void mainMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
+    bool gameOver;
 
-    public void LoadCurrent()
+    void Update()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
-    }
+        //if (player.GetComponent<PotentialMove>().curHealth <= 0.0f)
+       // {
+        //    gameOver = true;
+        //    Scene scene = SceneManager.GetActiveScene();
+       //     SceneManager.LoadScene(scene.name);
+       // }
 
-    public void LoadStore()
-    {
-        SceneManager.LoadScene(2);
+        if (gameOver)
+        {
+            winCanvas.enabled = false;
+            gameOverCanvas.enabled = true;
+            hudCanvas.enabled = false;
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            winCanvas.enabled = false;
+            gameOverCanvas.enabled = false;
+            hudCanvas.enabled = true;
+        }
+
     }
 }
