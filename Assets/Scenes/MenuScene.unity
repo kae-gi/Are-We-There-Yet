@@ -1703,7 +1703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f48387cd1808e4d9f9b592cd6ab62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 699731123}
 --- !u!4 &1605926261
 Transform:
   m_ObjectHideFlags: 0
@@ -2300,6 +2299,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 59308702}
+    - target: {fileID: 8434948959712835090, guid: 6284ab41d95a8ef438368e55346d753c, type: 3}
+      propertyPath: crashSound
+      value: 
+      objectReference: {fileID: 1558419895}
     - target: {fileID: 8478193328484075880, guid: 6284ab41d95a8ef438368e55346d753c, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -20,14 +20,14 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void LoadRestart()
+    public void LoadStore()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
     }
 
     public void LoadCity()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void LoadSpace()
@@ -40,10 +40,14 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
-    public void LoadStore()
+    public void LoadRestart()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    
+    public void LoadNext()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
 }

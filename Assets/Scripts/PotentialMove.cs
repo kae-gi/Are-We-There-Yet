@@ -6,7 +6,7 @@ using TMPro;
 
 public class PotentialMove : MonoBehaviour
 {
-    private float horizontalInput;
+    public float horizontalInput;
     private float steerAngle;
     private float speed;
     private int fuelCount;
@@ -26,7 +26,7 @@ public class PotentialMove : MonoBehaviour
     public TextMeshProUGUI fuelCountText;
     public GasBar gasBar;
     public float reduceGasPerUpdateFactor = -0.001f;
-    private float curGasAmount = 0.5f;
+    public float curGasAmount = 0.5f;
 
     public HealthBar healthBar;
     public float curHealth = 1.0f;
@@ -41,6 +41,8 @@ public class PotentialMove : MonoBehaviour
     public AudioSource laserSound;
     public AudioSource boatHornSound;
     public AudioSource boostSound;
+
+    public bool lose;
 
     void Start()
     {
@@ -177,6 +179,7 @@ public class PotentialMove : MonoBehaviour
     {
         curHealth += amount;
         healthBar.setHealth(curHealth);
+
     }
 
     public void changeGasAmount(float amount)
@@ -191,10 +194,11 @@ public class PotentialMove : MonoBehaviour
         gasBar.setGas(curGasAmount);
 
         // reload the scene if the player runs out of gas
-        if (curGasAmount <= 0.0f)
-        {
-            SceneManager.LoadScene(0);
-        }
+        //if (curGasAmount <= 0.0f)
+        //{
+            //SceneManager.LoadScene(0);
+       //     lose = true;
+       // }
     }
 
 }
