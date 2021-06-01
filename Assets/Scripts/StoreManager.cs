@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
 
 public class StoreManager : MonoBehaviour
@@ -9,13 +10,16 @@ public class StoreManager : MonoBehaviour
     public GameObject car;
     public TextMeshProUGUI coinCountText;
 
-    public TextMeshProUGUI redCostText;
+    public  TextMeshProUGUI redCostText;
+    public  Image redCoin;
     private static int redCost = 25;
 
-    public TextMeshProUGUI greenCostText;
+    public  TextMeshProUGUI greenCostText;
+    public  Image greenCoin;
     private static int greenCost = 50;
 
-    public TextMeshProUGUI blackCostText;
+    public  TextMeshProUGUI blackCostText;
+    public  Image blackCoin;
     private static int blackCost = 75;
 
     public AudioSource clickAudio;
@@ -26,19 +30,61 @@ public class StoreManager : MonoBehaviour
     private Color GREEN = new Color(0.0f, 1.0f, 0.0f);
     private Color BLACK = new Color(0.0f, 0.0f, 0.0f);
     private Color WHITE = new Color(1.0f, 1.0f, 1.0f);
+    private TextMeshProUGUI lastRedText = null;
 
     private void Start()
     {
         coinCountText.text = GlobalData.coinCount.ToString();
-        redCostText.text   = redCost.ToString();
-        greenCostText.text = greenCost.ToString();
-        blackCostText.text = blackCost.ToString();
+        setCostText(redCost, ref redCostText, ref redCoin);
+        setCostText(greenCost, ref greenCostText, ref greenCoin);
+        setCostText(blackCost, ref blackCostText, ref blackCoin);
         updateStoreSceneCarColor(GlobalData.carColor);
+    }
+
+    public void setCostText(int cost, ref TextMeshProUGUI t, ref Image coin)
+    {
+        if (cost > 0)
+        {
+            t.text = cost.ToString();
+        }
+        else
+        {
+            t.text = "";
+            coin.enabled = false;
+        }
     }
 
     public void updateStoreSceneCarColor(Color color)
     {
         car.transform.GetChild(0).GetComponent<MeshRenderer>().material.color = color;
+    }
+
+    private void makeTextRed(TextMeshProUGUI text)
+    {
+        if (lastRedText)
+        {
+            lastRedText.color = WHITE;
+        }
+        lastRedText = text;
+        text.color = RED;
+    }
+
+    private void makeLastTextWhite()
+    {
+        if (lastRedText)
+        {
+            lastRedText.color = WHITE;
+        }
+    }
+
+    private void makePurchase(ref int cost, ref TextMeshProUGUI t, ref Image i)
+    {
+        GlobalData.coinCount -= cost;
+        coinCountText.text = GlobalData.coinCount.ToString();
+        cost = 0;
+        t.text = "";
+        newPurchaseAudio.Play();
+        i.enabled = false;
     }
 
     public void mainMenu()
@@ -51,6 +97,7 @@ public class StoreManager : MonoBehaviour
         clickAudio.Play();
         GlobalData.carColor = WHITE; // the base coat is already blue, so just use white
         updateStoreSceneCarColor(GlobalData.carColor);
+        makeLastTextWhite();
     }
 
     public void redPaint()
@@ -59,7 +106,7 @@ public class StoreManager : MonoBehaviour
         if (GlobalData.coinCount < redCost)
         {
             insufficientAudio.Play();
-            redCostText.color = RED;
+            makeTextRed(redCostText);
             return;
         }
         redCostText.color = WHITE;
@@ -67,17 +114,14 @@ public class StoreManager : MonoBehaviour
         // purchase if able to
         if (GlobalData.coinCount >= redCost && redCost > 0)
         {
-            GlobalData.coinCount -= redCost;
-            coinCountText.text = GlobalData.coinCount.ToString();
-            redCost = 0;
-            redCostText.text = "0";
-            newPurchaseAudio.Play();
+            makePurchase(ref redCost, ref redCostText, ref redCoin);
         }
         else
         {
             clickAudio.Play();
         }
 
+        makeLastTextWhite();
         // set the car color
         GlobalData.carColor = RED;
         updateStoreSceneCarColor(GlobalData.carColor);
@@ -89,7 +133,7 @@ public class StoreManager : MonoBehaviour
         if (GlobalData.coinCount < greenCost)
         {
             insufficientAudio.Play();
-            greenCostText.color = RED;
+            makeTextRed(greenCostText);
             return;
         }
         greenCostText.color = WHITE;
@@ -97,17 +141,14 @@ public class StoreManager : MonoBehaviour
         // purchase if able to
         if (GlobalData.coinCount >= greenCost && greenCost > 0)
         {
-            GlobalData.coinCount -= greenCost;
-            coinCountText.text = GlobalData.coinCount.ToString();
-            greenCost = 0;
-            greenCostText.text = "0";
-            newPurchaseAudio.Play();
+            makePurchase(ref greenCost, ref greenCostText, ref greenCoin);
         }
         else
         {
             clickAudio.Play();
         }
 
+        makeLastTextWhite();
         // set the car color
         GlobalData.carColor = GREEN;
         updateStoreSceneCarColor(GlobalData.carColor);
@@ -119,7 +160,7 @@ public class StoreManager : MonoBehaviour
         if (GlobalData.coinCount < blackCost)
         {
             insufficientAudio.Play();
-            blackCostText.color = RED;
+            makeTextRed(blackCostText);
             return;
         }
         blackCostText.color = WHITE;
@@ -127,17 +168,14 @@ public class StoreManager : MonoBehaviour
         // purchase if able to
         if (GlobalData.coinCount >= blackCost && blackCost > 0)
         {
-            GlobalData.coinCount -= blackCost;
-            coinCountText.text = GlobalData.coinCount.ToString();
-            blackCost = 0;
-            blackCostText.text = "0";
-            newPurchaseAudio.Play();
+            makePurchase(ref blackCost, ref blackCostText, ref blackCoin);
         }
         else
         {
             clickAudio.Play();
         }
 
+        makeLastTextWhite();
         // set the car color
         GlobalData.carColor = BLACK;
         updateStoreSceneCarColor(GlobalData.carColor);

@@ -294,8 +294,11 @@ MonoBehaviour:
   car: {fileID: 699731123}
   coinCountText: {fileID: 21886474}
   redCostText: {fileID: 1274922195}
+  redCoin: {fileID: 1778994871}
   greenCostText: {fileID: 373074121}
+  greenCoin: {fileID: 2085718866}
   blackCostText: {fileID: 235696591}
+  blackCoin: {fileID: 1695514632}
   clickAudio: {fileID: 877011738}
   newPurchaseAudio: {fileID: 151164117}
   insufficientAudio: {fileID: 1426489491}
