@@ -42,9 +42,9 @@ public class Win : MonoBehaviour
         if (gas <= 0.0f || health <= 0.0f)
         {
             lose = true;
-            // stop player from having control? temp nothing happens right now
-            //playerRB.isKinematic = true;
-            //playerRB.velocity = Vector3.zero;
+            Destroy(player);
+            // Destroy the player gameobject on game over
+            // Eventually we should spawn an explosion gameobject here tooo
         }
         // canvas enabling/disabling
         if (win)
