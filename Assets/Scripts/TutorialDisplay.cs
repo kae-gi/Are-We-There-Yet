@@ -10,6 +10,13 @@ public class TutorialDisplay : MonoBehaviour
     public TextMeshProUGUI coinText;
     public GameObject gui;
 
+    private PotentialMove playerMovement;
+
+    void Start()
+    {
+        playerMovement = player.GetComponent<PotentialMove>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -26,9 +33,19 @@ public class TutorialDisplay : MonoBehaviour
         else if (player.transform.position.z < -150){
             tutorialText.text = "Press space to jump";
         }
-        else if (player.transform.position.z < -75){
-            gui.SetActive(true);
+        else if (player.transform.position.z < -50){
             tutorialText.text = "Use your jump to get over gaps";
+        }
+        else if (player.transform.position.z < 25){
+            gui.SetActive(true);
+            tutorialText.text = "This is the game's GUI";
+            playerMovement.reduceGasPerUpdateFactor = -0.001f;
+        }
+        else if (player.transform.position.z < 100){
+            tutorialText.text = "Collecting gas cans increases your gas bar";
+        }
+        else if (player.transform.position.z < 175){
+            tutorialText.text = "Use left shift to burn gas faster and accelerate";
         }
     }
 
