@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TutorialDisplay : MonoBehaviour
@@ -46,6 +47,28 @@ public class TutorialDisplay : MonoBehaviour
         }
         else if (player.transform.position.z < 175){
             tutorialText.text = "Use left shift to burn gas faster and accelerate";
+        }
+        else if (player.transform.position.z < 275){
+            tutorialText.text = "Be careful, if you run out of gas it's game over";
+        }
+        else if (player.transform.position.z < 350){
+            tutorialText.text = "The coin counter at top left tracks the coins you collect";
+        }
+        else if (player.transform.position.z < 425){
+            tutorialText.text = "You can use coins in the store on the main menu to buy upgrades";
+        }
+        else if (player.transform.position.z < 500){
+            tutorialText.text = "The goal is to make it to the mechanic's at the end of the level";
+        }
+        else if (player.transform.position.z < 550){
+            tutorialText.text = "To fix your brakes and accelerator, obviously";
+        }
+        else if (player.transform.position.z < 585){
+            tutorialText.text = "That's all! Good luck!";
+        }
+        else {
+            GlobalData.coinCount -= 16;
+            SceneManager.LoadScene(0);
         }
     }
 
