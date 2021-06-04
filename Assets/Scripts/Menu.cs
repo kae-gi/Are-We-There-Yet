@@ -26,19 +26,24 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void LoadCity()
+    public void LoadTutorial()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void LoadSpace()
+    public void LoadCity()
     {
         SceneManager.LoadScene(3);
     }
 
-    public void LoadDesert()
+    public void LoadSpace()
     {
         SceneManager.LoadScene(4);
+    }
+
+    public void LoadDesert()
+    {
+        SceneManager.LoadScene(5);
     }
 
     public void LoadRestart()
