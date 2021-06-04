@@ -12,6 +12,8 @@ public class Fireworks : MonoBehaviour
     private ParticleSystem fireworks;
     private float targetIntensity = 0f;
     bool lightsOff;
+    public AudioSource fireworksAudio;
+    private bool audioPlaying = false;
 
     void Start()
     {
@@ -35,11 +37,15 @@ public class Fireworks : MonoBehaviour
             sceneLight.intensity = Mathf.Lerp(sceneLight.intensity, targetIntensity, fadeSpeed*Time.deltaTime);
             if (sceneLight.intensity <= 0.2f){
                 fireworks.Play();
+                if (!audioPlaying)
+                {
+                    fireworksAudio.Play();
+                    audioPlaying = true;
+                }
             } else
             {
                 fireworks.Stop();
             }
         }
     }
-
 }

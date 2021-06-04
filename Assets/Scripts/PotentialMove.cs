@@ -112,12 +112,12 @@ public class PotentialMove : MonoBehaviour
         rb.velocity = inputVector;
 
         // jumping
-        isGrounded = true;
+        isGrounded = false;
         for (int i = 0; i < 4; i++)
         {
-            if (!wheelColliders[i].isGrounded)
+            if (wheelColliders[i].isGrounded)
             {
-                isGrounded = false;
+                isGrounded = true;
             }
         }
         if (Input.GetButton("Jump") && isGrounded)
