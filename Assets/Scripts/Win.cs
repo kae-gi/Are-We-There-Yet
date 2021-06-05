@@ -36,6 +36,10 @@ public class Win : MonoBehaviour
 
     void Update()
     {
+        if (!player)
+        {
+            return;
+        }
         // check status of health and gas
         gas = player.GetComponent<PotentialMove>().curGasAmount;
         health = player.GetComponent<PotentialMove>().curHealth;

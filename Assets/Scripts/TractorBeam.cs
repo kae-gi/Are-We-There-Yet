@@ -28,7 +28,7 @@ public class TractorBeam : MonoBehaviour
 
     void Update()
     {
-        if (isInRange)
+        if (isInRange && Mover) // only run if in range and if the mover object exists
         {
             Mover.position = Vector3.MoveTowards(Mover.position, Target.position, speed * Time.deltaTime);
         }

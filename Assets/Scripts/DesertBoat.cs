@@ -18,7 +18,8 @@ public class DesertBoat : MonoBehaviour
     void FixedUpdate()
     {
         // wait until the player touches the boat to move
-        if (shouldMove)
+        // also make sure the player ofject is not destroyed
+        if (shouldMove && player)
         {
             transform.position = new Vector3(transform.position.x + horizontalSpeed, transform.position.y, player.transform.position.z);
 

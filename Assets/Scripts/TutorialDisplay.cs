@@ -21,6 +21,10 @@ public class TutorialDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!player) // check if the player object is destroyed
+        {
+            return;
+        }
         if (player.transform.position.z < -400){
             gui.SetActive(false);
             tutorialText.text = "Welcome to Are We There Yet!";
