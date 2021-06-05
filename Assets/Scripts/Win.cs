@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour
 {
     public GameObject player;
+    public GameObject effect;
     public Canvas winCanvas;
     public Canvas gameOverCanvas;
     public Canvas hudCanvas;
+    public AudioSource deathSound;
+
     private Rigidbody playerRB;
     private float gas;
     private float health;
@@ -46,9 +49,14 @@ public class Win : MonoBehaviour
         if (gas <= 0.0f || health <= 0.0f)
         {
             lose = true;
-            Destroy(player);
+            // Get player's last location
+            Vector3 lastLoc = player.transform.position;
             // Destroy the player gameobject on game over
-            // Eventually we should spawn an explosion gameobject here tooo
+            Destroy(player);
+            // Play death effect after player is destroyed and then destroy the effect
+            deathSound.Play();
+            GameObject deathEffect = Instantiate(effect, lastLoc, Quaternion.identity);
+            Destroy(deathEffect, 2);
         }
         // canvas enabling/disabling
         if (win)

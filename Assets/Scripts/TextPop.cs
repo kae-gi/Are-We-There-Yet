@@ -25,7 +25,7 @@ public class TextPop : MonoBehaviour
         }
         if (last)
         {
-            Invoke("EndScene",15);
+            Invoke("EndScene",15.5f);
         }
     }
     void EndScene()

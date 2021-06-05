@@ -128922,9 +128922,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865169}
+  effect: {fileID: 9113758554062341713, guid: 0d75957a4078f56479e81ebc3523b559, type: 3}
   winCanvas: {fileID: 1214038855}
   gameOverCanvas: {fileID: 2007061475}
   hudCanvas: {fileID: 1575706527}
+  deathSound: {fileID: 836983809}
 --- !u!65 &1868320278
 BoxCollider:
   m_ObjectHideFlags: 0

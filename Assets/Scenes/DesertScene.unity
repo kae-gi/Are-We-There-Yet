@@ -17883,9 +17883,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865169}
+  effect: {fileID: 9113758554062341713, guid: 0d75957a4078f56479e81ebc3523b559, type: 3}
   winCanvas: {fileID: 1350034698}
   gameOverCanvas: {fileID: 1445813566}
   hudCanvas: {fileID: 1665281345}
+  deathSound: {fileID: 836983809}
 --- !u!65 &210566520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75536,7 +75538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 1605034160}
   collisionHitAmount: -0.3
 --- !u!1 &852182462
 GameObject:
@@ -146624,7 +146626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865173}
-  crashSound: {fileID: 0}
+  crashSound: {fileID: 1605034160}
   collisionHitAmount: -0.3
 --- !u!1 &2056059598
 GameObject:
