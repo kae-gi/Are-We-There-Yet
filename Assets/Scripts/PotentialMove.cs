@@ -11,7 +11,7 @@ public class PotentialMove : MonoBehaviour
     private float speed;
     private int fuelCount;
     private bool isGrounded;
-    private bool isAccelerating = false;
+    public bool isAccelerating = false;
     private Rigidbody rb;
     private Vector3 inputVector;
 

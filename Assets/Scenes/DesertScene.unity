@@ -17166,6 +17166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
+  isAccelerating: 0
   wheelColliders:
   - {fileID: 18583507}
   - {fileID: 941257633}
@@ -98397,6 +98398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 130865169}
+  boost: {fileID: 1981169513071056084, guid: 0164c1706e51caf40abd28624eb14d97, type: 3}
   offset: {x: 0, y: 5, z: -7}
 --- !u!81 &1069770840
 AudioListener:

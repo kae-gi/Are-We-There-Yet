@@ -1452,6 +1452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 699731123}
+  boost: {fileID: 1981169513071056084, guid: 0164c1706e51caf40abd28624eb14d97, type: 3}
   offset: {x: -20, y: 10, z: -10}
 --- !u!1 &1432196092
 GameObject:
