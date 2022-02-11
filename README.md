@@ -16,4 +16,4 @@ Term project for CIS 410 Game Programming.
 ## Overview
 Are We There Yet is a driving platformer. Built in Unity using C#.
 
-![Game Title](/images/title.png)
+![Game Title](/title.png)
